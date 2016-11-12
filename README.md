@@ -9,6 +9,8 @@ Clone using `git clone https://github.com/Alfredu/csgo_stattrak`
 Install dependencies with the command `npm install`
 
 # License
+Copyright (c) 2016 Alfredu
+
 This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
