@@ -4,6 +4,6 @@ This project will help you make a real life Stattrak™ Counter using CS:GO's Ga
 
 # How to install
 
-Clone using git clone https://github.com/Alfredu/csgo_stattrak.
+Clone using `git clone https://github.com/Alfredu/csgo_stattrak`
 
-Install dependencies with the command npm install.
+Install dependencies with the command `npm install`
