@@ -34,9 +34,9 @@ void setup() {
   pinMode(redPin, OUTPUT);
   pinMode(pin2, OUTPUT);
   pinMode(pin3, OUTPUT);
+  pinMode(13,OUTPUT);
   
-  Serial.setTimeout(20);
-  digitalWrite(redPin, LOW);
+  Serial.setTimeout(15);
 }
 
 void loop() {
@@ -44,25 +44,11 @@ void loop() {
   while(Serial.available()){
     
       cosa = Serial.readString();
-    if(cosa == "1"){
-      digitalWrite(redPin, HIGH);
-      digitalWrite(pin2, LOW);
-      digitalWrite(pin3, LOW);
-    }
-    else if(cosa == "2"){
-      digitalWrite(redPin, HIGH);
-      digitalWrite(pin2, HIGH);
-      digitalWrite(pin3, LOW);
-    }
-    else if(cosa == "3"){
-      digitalWrite(redPin, HIGH);
-      digitalWrite(pin2, HIGH);
-      digitalWrite(pin3, HIGH);
+    if(cosa == "0"){
+      digitalWrite(13,HIGH);
     }
     else{
-      digitalWrite(redPin, LOW);
-      digitalWrite(pin2, LOW);
-      digitalWrite(pin3, LOW);
+      digitalWrite(13,LOW);
     }
   }
   
